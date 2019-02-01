@@ -1,0 +1,14 @@
+---
+- name: Daemon reload
+  systemd:
+    daemon_reload: true
+
+- name: Start nginx
+  systemd:
+    name: nginx
+    state: started
+
+- name: Stop nginx
+  systemd:
+    name: nginx
+    state: stopped
