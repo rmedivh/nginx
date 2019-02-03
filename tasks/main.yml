@@ -1,12 +1,3 @@
 ---
-- name: Install epel
-  yum:
-    name: epel-release
-    state: installed
-
-- name: install nginx
-  yum:
-    name: nginx
-    state: installed
-  notify:
-    - Start nginx
+- name: Run systemctl --user
+  command: systemctl --user

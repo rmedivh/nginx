@@ -12,8 +12,6 @@ platforms:
     environment:
       container: docker
     privileged: true
-    security_opts:
-      - seccomp=unconfined
     capabilities:
       - SYS_ADMIN
     volumes:
