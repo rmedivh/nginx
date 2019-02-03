@@ -11,5 +11,8 @@
       rm -f /lib/systemd/system/basic.target.wants/*
       rm -f /lib/systemd/system/anaconda.target.wants/*
 
-- name: Run systemctl --user
-  command: systemctl --user
+- name: Run uname
+  command: uname -a
+
+- name: Run cat
+  command: cat /etc/*-release
