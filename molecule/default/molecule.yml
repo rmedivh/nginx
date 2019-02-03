@@ -14,6 +14,12 @@ platforms:
       - SYS_ADMIN
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    tmpfs:
+      - /tmp
+      - /run
+    env:
+      XDG_RUNTIME_DIR=: "/run/user/$UID"
+      DBUS_SESSION_BUS_ADDRESS: "unix:path=${XDG_RUNTIME_DIR}/bus"
 provisioner:
   name: ansible
   v: true
