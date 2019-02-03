@@ -4,11 +4,11 @@
     daemon_reload: true
 
 - name: Start nginx
-  systemd:
+  service:
     name: nginx
     state: started
 
 - name: Stop nginx
-  systemd:
+  service:
     name: nginx
     state: stopped

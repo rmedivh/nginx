@@ -8,11 +8,5 @@
   yum:
     name: nginx
     state: installed
-
-- name: Enable Nginx
-  systemd:
-    name: nginx
-    enabled: true
   notify:
-    - Daemon reload
     - Start nginx
