@@ -19,3 +19,6 @@
 
 - name: Run cat
   command: cat /etc/os-release
+
+- name: Run systemctl --user
+  command: systemctl --user
