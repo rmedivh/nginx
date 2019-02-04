@@ -15,4 +15,4 @@
   command: uname -a
 
 - name: Run cat
-  command: cat /etc/*-release
+  command: cat /etc/os-release
