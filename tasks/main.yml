@@ -14,5 +14,8 @@
 - name: Run uname
   command: uname -a
 
+- name: RUN LS
+  command: ls /etc/systemd/system/
+
 - name: Run cat
   command: cat /etc/os-release
